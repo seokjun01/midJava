@@ -8,8 +8,8 @@ public class TestString5 {
 
         int extIndex = str.indexOf(ext);
 
-        String filename = str.substring(0, extIndex);
-        String extName = str.substring(extIndex);
+        String filename = str.substring(0, extIndex); // 0부터 .txt까지 자르기
+        String extName = str.substring(extIndex); // .txt부터 자르기
         System.out.println("filename : " + filename);
         System.out.println("extName : " + extName);
     }

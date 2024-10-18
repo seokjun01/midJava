@@ -8,7 +8,7 @@ public class TestString6 {
 
         int count = 0;
         int index =str.indexOf(key); // 변수를 넣을수도 있는지?
-        while( index >= 0) {
+        while( index >= 0) { //인덱스를 못찾으면 -1을 반환하므로 , 끝까지 찾을때 까지
             index = str.indexOf(key, index + 1);
             count++;
         }
