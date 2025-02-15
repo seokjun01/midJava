@@ -4,7 +4,7 @@ public class NestedOuterMain {
 
     public static void main(String[] args) {
         NestedOuter outer = new NestedOuter();
-        //정적 중첩 클래스는 `new 바깥클래스.중첩클래스()` 로 생성할 수 있다.
+        //정적 중첩 클래스는 `new 바깥클래스.중첩클래스()` 로 생성할 수 있다. 바깥.안에꺼
         NestedOuter.Nested nested = new NestedOuter.Nested();
         nested.print();
         System.out.println("nestedClass = " + nested.getClass());
