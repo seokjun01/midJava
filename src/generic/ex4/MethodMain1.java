@@ -17,7 +17,8 @@ public class MethodMain1 {
         Integer result2 = GenericMethod.genericMethod(i);
         Integer integerValue2 = GenericMethod.numberMethod(10);
         Double doubleValue2 = GenericMethod.<Double>numberMethod(20.0);
-        /***제네릭 타입**
+        /*
+        **제네릭 타입**
          정의: `GenericClass<T>`
          타입 인자 전달: 객체를 생성하는 시점
          예) `new GenericClass<String>`
