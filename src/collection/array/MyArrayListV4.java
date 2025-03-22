@@ -84,4 +84,9 @@ public class MyArrayListV4<E> {
 		int newCapacity = oldCapacity * 2;
 		elementData = Arrays.copyOf(elementData, newCapacity); // 동적으로 용량을 2배로 키우는 메소드
 	}
+
+	@Override
+	public String toString() {
+		return Arrays.toString(Arrays.copyOf(elementData, size)) + "size=" + size + "capacity=" + elementData.length;
+	}
 }
